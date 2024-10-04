@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OtakuShop</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Gêneros</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Comédia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Drama</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fantasia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romance</a>
+        </li>
+      </ul>
+      <img src="img/LogoOtakuShop.svg" alt="Logo OtakuShop" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Otaku</b>Shop</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Gêneros</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Comédia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Drama</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Fantasia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Romance</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha coleção</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Qual o próximo anime na sua lista?</h2>
+    <p class="banner__texto">Explore nosso catálogo e encontre o próximo anime para maratonar!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Busque seu anime favorito...">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/Naruto.jpg" alt="Naruto Shippuden"></div>
+          <div class="swiper-slide"><img src="img/AttackOnTitan.jpg" alt="Attack on Titan"></div>
+          <div class="swiper-slide"><img src="img/MyHeroAcademia.jpg" alt="My Hero Academia"></div>
+          <div class="swiper-slide"><img src="img/DemonSlayer.jpg" alt="Demon Slayer"></div>
+          <div class="swiper-slide"><img src="img/OnePiece.jpg" alt="One Piece"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Hunter x Hunter</h2>
+            <p class="descrição__texto">
+              Acompanhe a saga de Gon Freecss em sua jornada para se tornar um Hunter!
+            </p>
+          </div>
+          <img src="img/HunterxHunter.jpg" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar anime" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar ao carrinho" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais populares</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/Naruto.jpg" alt="Naruto Shippuden"></div>
+          <div class="swiper-slide"><img src="img/AttackOnTitan.jpg" alt="Attack on Titan"></div>
+          <div class="swiper-slide"><img src="img/MyHeroAcademia.jpg" alt="My Hero Academia"></div>
+          <div class="swiper-slide"><img src="img/DemonSlayer.jpg" alt="Demon Slayer"></div>
+          <div class="swiper-slide"><img src="img/OnePiece.jpg" alt="One Piece"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Personagem do Mês</h3>
+            <h2 class="descrição__titulo-livro">Naruto Uzumaki</h2>
+            <p class="descrição__texto">
+              Conheça mais sobre o ninja de Konoha que sonha em se tornar Hokage!
+            </p>
+          </div>
+          <img src="img/NarutoPersonagem.jpg" class="descrição__imagem">
+        </div>
+
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar personagem"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">ANIMES VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Naruto</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dragon Ball Z</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">One Piece</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Sword Art Online</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Attack on Titan</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Demon Slayer</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Fullmetal Alchemist</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Hunter x Hunter</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Receba novidades sobre animes!</h2>
+      <p class="contato__texto">
+        Fique por dentro dos novos lançamentos, promoções e eventos!
+      </p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Comunidade Otaku</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Grupos</li>
+      <li class="lista-rodapé__item">
+        <img src="img/OtakuGroup.svg" alt="Grupo Otaku" />
+        <a href="#" class="lista-rodapé__link">Otaku Group</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AnimeClub.svg" alt="Anime Club" />
+        <a href="#" class="lista-rodapé__link">Anime Club</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Novidades</li>
+      <li class="lista-rodapé__item">
+        <img src="img/AnimeNews.svg" alt="Anime News" />
+        <a href="#" class="lista-rodapé__link">Anime News</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/OtakuEvents.svg" alt="Otaku Events" />
+        <a href="#" class="lista-rodapé__link">Otaku Events</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Comunidade</li>
+      <li class="lista-rodapé__item">
+        <img src="img/AnimeFanatics.svg" alt="Anime Fanatics" />
+        <a href="#" class="lista-rodapé__link">Anime Fanatics</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
